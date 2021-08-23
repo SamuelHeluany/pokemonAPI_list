@@ -49,26 +49,11 @@
 
 .name button:hover {
   cursor: pointer;
-}
 
-.pokemons {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(0, 204, 255);
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-.pokemons h3 {
-  margin: 5px;
-  background-color:rgba(128, 128, 128, 0.671);
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
 }
 
 .pokemons img {
-  width: 250px;
-  margin: 0%;
+  width: 200px;
+  height: 40px;
 }
+
