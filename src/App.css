@@ -52,6 +52,28 @@
 
 }
 
+.container .pokename {
+  margin: 5px;
+  padding: 10px;
+  background-color: #48a3e9;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.container .pokename h4 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+}
+
+.container .pokename h4:hover {
+  cursor: pointer;
+  background-color: rgba(56, 56, 56, 0.274);
+  border-radius: 6px;
+}
+
 .pokemons img {
   width: 200px;
   height: 40px;
