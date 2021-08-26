@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react';
+// import Pokemon from './components/pokemon.js'
 import './App.css';
 import axios from 'axios'
+import Pokemon from './components/pokemon';
 
 function App() {
   const [pokemons, setPokemons] = useState([])
 
+  const pokeItems = async () => {
+    const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/`)
+    setPokemons(result.data.results)
+    console.log(result)
+  }
 
   useEffect(() => {
-    const pokeItems = async (id) => {
-      const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/`)
-      setPokemons(result.data.results)
-      console.log(result)
-    }
     pokeItems()
   }, [])
 
@@ -27,8 +29,9 @@ function App() {
 
           {pokemons.map((poke) => {
             return (
-              <div className="pokename">
-                <h4>{poke.name}</h4>
+              <div key={poke.name} className="pokename">
+                <h4>{poke.name}</h4>                
+                <Pokemon pokemonUrl={poke.url} />
               </div>
             )
           })}

@@ -60,7 +60,7 @@
   border-radius: 8px;
 }
 
-.container .pokename h4 {
+.container .pokename h4, a {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
