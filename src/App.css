@@ -74,8 +74,12 @@
   border-radius: 6px;
 }
 
-.pokemons img {
-  width: 200px;
-  height: 40px;
+.detailspoke {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+.detailspoke img {
+  width: 150px;
+}
