@@ -22,6 +22,7 @@ function Pokemon({ pokemonUrl }) {
             type: result.data.types[0].type.name,
             hp: result.data.stats[0].base_stat,
         })
+       
     }
 
     useEffect(() => {
